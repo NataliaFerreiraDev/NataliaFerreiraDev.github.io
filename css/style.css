@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+
+/* Definindo variáveis de cores */
+:root {
+    --main-color: #4CAF50;      /* Cor principal (verde neutro) */
+    --text-color: #ffffff;      /* Cor do texto */
+    --bg-color-01: #1f242d;     /* Cor de fundo primária (quase preta) */
+    --bg-color-02: #323946;     /* Cor de fundo secundária (cinza escuro) */
+    --color-01: #B0B0B0;        /* Cor extra 1 (cinza claro) */
+    --linkedin-color: #0077b5;  /* Cor do LinkedIn */
+    --github-color: #ededed;    /* Cor do GitHub */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-color-01);
+    color: var(--text-color);
+    font-family: 'Lato', sans-serif;
+}
+
+nav {
+    background-color: var(--bg-color-02);
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar-brand {
+    color: var(--color-01);
+    font-size: 1.8rem;
+}
+
+.navbar-nav .nav-link {
+    padding: 15px 20px;
+    font-size: 1.2rem;
+    color: var(--color-01);
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    transform: scale(1.3);
+    color: var(--main-color);
+}
+
+.social-link {
+    font-size: 1.8rem;
+    color: var(--color-01);
+    margin-left: 20px;
+    transition: transform 0.3s ease, color 0.3s;
+}
+
+.social-link:hover {
+    transform: scale(1.3);
+}
+
+.social-link:nth-child(1):hover {
+    color: var(--linkedin-color);
+}
+
+.social-link:nth-child(2):hover {
+    color: var(--github-color);
+}
+/* Linha de separação entre menu e corpo */
+.menu-separator {
+    height: 2px; /* Altura da linha de separação */
+    background-color: rgba(255, 255, 255, 0.1); /* Cor sutil da linha */
+    margin-top: 55px; /* Espaço acima da linha para compensar o menu fixo */
+}
+
+/* Estilo das seções */
+section {
+    min-height: 100vh; /* Define a altura mínima como a altura da viewport */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza o conteúdo verticalmente */
+    padding: 60px 0; /* Mantém o espaçamento vertical */
+}
+
+.sobre-img {
+    border-right: solid 0.6rem;
+    border-bottom: solid 0.6rem;
+    border-image: linear-gradient(135deg, transparent 50%, var(--main-color)) 1;
+    width: 80%; /* Ajusta a largura da imagem */
+    max-width: 350px; /* Largura máxima para a imagem */
+}
+
+.sobre-img img {
+    width: 100%;
+    height: auto;
+}
+
+.sobre-conteudo h2 {
+    font-size: 2.5rem;
+    color: var(--color-01);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sobre-conteudo p {
+    line-height: 1.8; /* Aumentado para melhor legibilidade */
+    margin-bottom: 20px; /* Aumentado para mais espaço entre parágrafos */
+}
+
+/* Spinner */
+.spinner {
+    border: 8px solid var(--color-01); /* Cor clara para o fundo */
+    border-top: 8px solid var(--main-color); /* Cor do spinner */
+    border-radius: 50%;
+    width: 50px; /* Tamanho do spinner */
+    height: 50px; /* Tamanho do spinner */
+    animation: spin 1s linear infinite; /* Animação do spinning */
+    margin: 20px auto; /* Centraliza o spinner */
+}
+
+/* Animação de spinning */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Estilo da seção "Em Construção" */
+.under-construction {
+    text-align: center; /* Centraliza o texto */
+    padding: 50px 0; /* Espaçamento superior e inferior */
+}
+
+.under-construction p {
+    font-size: 20px; /* Tamanho da fonte */
+    color: var(--text-color); /* Cor do texto */
+    margin-top: 15px; /* Espaçamento superior do texto */
+}
+
+/* Ajustes para dispositivos móveis */
+@media (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: column; /* Coloca os itens do menu em coluna em telas menores */
+        align-items: flex-start; /* Alinhamento à esquerda */
+    }
+    .navbar-nav .nav-link {
+        padding: 10px; /* Ajustando o padding em telas menores */
+        font-size: 1rem; /* Ajustando o tamanho da fonte */
+    }
+    .sobre-img {
+        max-width: 100%; /* Aumenta a largura máxima para telas menores */
+    }
+}

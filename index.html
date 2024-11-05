@@ -1,332 +1,147 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <title>Currículo - Natalia Ferreira D'Angelo</title>
-    <link rel="icon" type="image/x-icon" href="assets/img/laptop-code-solid.svg" />
-    <!-- Font Awesome icons (free version)-->
-    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
-    <!-- Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet"
-        type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | Natalia</title>
+
+    <!-- Meta Tags para SEO -->
+    <meta name="description" content="Portfólio de Natalia, desenvolvedora Java plena e iniciante em front-end, mostrando experiências, projetos e habilidades.">
+    <meta name="keywords" content="portfólio, desenvolvedora Java, front-end, projetos, habilidades, experiência">
+    <meta name="author" content="Natalia">
+
+    <!-- Open Graph para compartilhamento em redes sociais -->
+    <meta property="og:title" content="Portfólio | Natalia">
+    <meta property="og:description" content="Confira meu portfólio com experiências e projetos de desenvolvimento.">
+    <meta property="og:image" content="[URL da sua imagem de pré-visualização]">
+    <meta property="og:url" content="https://nataliaferreiradev.github.io/">
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="icon" href="./img/braces.svg" type="image/png">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Seu CSS personalizado -->
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body id="page-top">
-    <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">
-            <span class="d-block d-lg-none">Natalia Ferreira D'Angelo</span>
-            <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2"
-                    src="assets/img/Natalia.png" alt="imagem de perfil da Natalia" /></span>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
-                class="navbar-toggler-icon"></span></button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">Sobre</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experiência</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Formação</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portifolio">Portifólio</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Cursos</a></li>
-            </ul>
+<body>
+    <!-- Header com menu de navegação fixo -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <div class="container">
+                <span class="navbar-brand me-3">Natalia D'Angelo</span>
+                <div class="d-flex align-items-center">
+                    <a href="https://www.linkedin.com/in/nataliafdangelo/" target="_blank" class="nav-link social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/NataliaFerreiraDev" target="_blank" class="nav-link social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sobre">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#experiencia">Experiência</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#formacao">Formação</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio">Portfólio</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="menu-separator"></div> <!-- Linha de separação -->
+
+    <!-- Conteúdo principal -->
+    <main class="container my-5">
+        <section id="sobre" class="my-5">
+            <div class="row align-items-center">
+                <div class="col-md-8 sobre-conteudo">
+                    <h2 class="mb-4">Sobre</h2>
+                    <p>
+                        Sou uma Desenvolvedora Java apaixonada por tecnologia e inovação. Graduada em Análise e Desenvolvimento de Sistemas pela Faculdade Impacta, possuo também a certificação AWS Cloud Practitioner.
+                    </p>
+                    <p>
+                        Atualmente, trabalho na RGC Consultoria Engenharia, onde sou responsável pela manutenção e implementação de novas funcionalidades em sistemas baseados em Java e Postgres.
+                    </p>
+                    <p>
+                        Minha experiência inclui o desenvolvimento de Backends para Frontends (BFFs) com Spring Boot e a construção de microserviços que atendem às necessidades dos usuários. Durante minha passagem pelo Itaú Unibanco, atuei no projeto "Contextualização Mercado", aprimorando a observabilidade do sistema com ferramentas como Prometheus e Grafana.
+                    </p>
+                    <p>
+                        Além disso, no programa Quero Ser Dev da Raia Drogasil, tive a oportunidade de aprimorar minhas habilidades Full Stack, desenvolvendo aplicações com Java e Angular.
+                    </p>
+                    <p>
+                        Estou sempre em busca de novos desafios e oportunidades para aplicar e expandir meus conhecimentos técnicos. Acredito que cada projeto é uma oportunidade para aprender e contribuir de forma significativa.
+                    </p>
+                </div>
+                <div class="col-md-4 sobre-img">
+                    <img src="./img/profile_natalia.png" alt="Natalia D'Angelo" class="img-fluid">
+                </div>
+            </div>
+        </section>
+
+        <section id="experiencia">
+            <h2>Experiência Profissional</h2>
+            <div class="under-construction">
+                <div class="spinner"></div>
+                <p>Em Construção</p>
+            </div>
+        </section>
+
+        <section id="formacao">
+            <h2>Formação</h2>
+            <div class="under-construction">
+                <div class="spinner"></div>
+                <p>Em Construção</p>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="under-construction">
+                <div class="spinner"></div>
+                <p>Em Construção</p>
+            </div>
+        </section>
+
+        <section id="portfolio">
+            <h2>Portfólio</h2>
+            <div class="under-construction">
+                <div class="spinner"></div>
+                <p>Em Construção</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 - Natalia Ferreira D`Angelo</p>
         </div>
-    </nav>
-    <!-- Page Content-->
-    <div class="container-fluid p-0">
-        <!-- About-->
-        <section class="resume-section" id="about">
-            <div class="resume-section-content">
-                <h1 class="mb-0">
-                    <span class="text-primary">Natalia Ferreira D'Angelo</span>
-                </h1>
-                <div class="subheading mb-5">
-                    Hortolândia - SP · (11) 97648-1655 ·
-                    <a href="mailto:nataliaferreira.dev@yahoo.com">nataliaferreira.dev@yahoo.com</a>
-                </div>
-                <p class="lead mb-5">
-                    Sou uma desenvolvedora Java apaixonada por tecnologia e inovação, 
-                    com a certificação Practitioner da AWS e graduando em Análise e Desenvolvimento de Sistemas pela Impacta Tecnologia. <br>
-                    Atualmente atuo como desenvolvedora back-end, utilizando Java, Spring Boot, BFF, microservices, testes unitários, GitHub e AWS. 
-                    Além disso, estou iniciando o conhecimento em observabilidade, usando ferramentas como Prometheus, Grafana e Splunk.<br>
-                    Antes de ingressar no Itaú Unibanco, participei do programa Quero Ser Dev da RD, uma iniciativa inovadora que me capacitou e 
-                    desenvolveu como programadora Full Stack, com foco em Java e Angular. Durante esse treinamento intensivo, adquiri conhecimentos 
-                    abrangentes em ambas as extremidades do espectro tecnológico, enfrentando desafios práticos e projetos significativos.<br>
-                    Meu objetivo é continuar aprimorando minhas habilidades técnicas e criando soluções que agreguem valor aos clientes e à sociedade.
-                </p>
-                <div class="social-icons">
-                    <a class="social-icon" href="https://www.linkedin.com/in/nataliafdangelo/" target="_blank"><i
-                            class="fab fa-linkedin-in"></i></a>
-                    <a class="social-icon" href="https://github.com/NataliaFerreiraDev" target="_blank"><i
-                            class="fab fa-github"></i></a>
-                </div>
-            </div>
-        </section>
-        <hr class="m-0" />
-        <!-- Experience-->
-        <section class="resume-section" id="experience">
-            <div class="resume-section-content">
-                <h2 class="mb-5">Experiência</h2>
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div class="flex-grow-1">
-                        <h3 class="mb-0">Desenvolvedora Java</h3>
-                        <div class="subheading mb-3">Itaú Unibanco</div>
-                            <p>
-                                Atualmente, desempenho um papel fundamental no projeto "Contextualização Mercado", uma funcionalidade inovadora que visa proporcionar
-                                aos clientes uma análise contextualizada dos impactos das notícias do mercado financeiro em seus investimentos.
-                            </p>
-                            <p>
-                                Desde a concepção até o lançamento bem-sucedido da funcionalidade, atuei como desenvolvedora back-end, desempenhando um papel crucial
-                                em todas as fases do ciclo de vida do projeto. Atualmente, tenho a responsabilidade contínua pela manutenção do sistema e pelo 
-                                desenvolvimento de novas funcionalidades, garantindo uma experiência contínua e aprimorada para os usuários.
-                            </p>
-                            <p>
-                                Minhas habilidades técnicas abrangem o desenvolvimento de BFF (Back For Front) em Java, utilizando o framework Spring, além da 
-                                implementação de Testes Unitários para garantir a robustez do código. Estou profundamente envolvida na arquitetura de microserviços, 
-                                empregando as melhores práticas para garantir escalabilidade e eficiência. Meu trabalho se estende ao ambiente de versionamento do 
-                                GitHub e à utilização da infraestrutura na AWS, onde continuo a expandir meus conhecimentos.
-                            </p>
-                            <p>
-                                Adicionalmente, contribuo para a observabilidade do sistema, utilizando ferramentas como Prometheus, Grafana e Splunk para monitorar e 
-                                analisar o desempenho, garantindo uma resposta proativa a eventos e aprimorando a eficácia operacional.
-                            </p>
-                            <p>
-                                Ingressei na empresa por meio de um bootcamp de 5 semanas, uma experiência intensiva que solidificou meu conhecimento em Java, Spring 
-                                Boot e AWS. Essa oportunidade de aprendizado acelerado permitiu-me adquirir as habilidades necessárias para assumir um papel vital 
-                                neste projeto desafiador e inovador.
-                            </p>
-                    </div>
-                    <div class="flex-shrink-0"><span class="text-primary">Junho 2021 - Até o momento</span></div>
-                </div>
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div class="flex-grow-1">
-                        <h3 class="mb-0">Desenvolvedor Full Stack</h3>
-                        <div class="subheading mb-3">RD - RaiaDrogasil</div>
-                            <p>
-                                Tive o privilégio de participar do Programa Quero Ser Dev, uma iniciativa inovadora promovida pela empresa para capacitar e desenvolver 
-                                novos talentos no campo da programação Full Stack, com foco nas tecnologias Java e Angular.
-                            </p>
-                            <p>
-                                Durante esse treinamento intensivo, mergulhei profundamente no universo do desenvolvimento de software, adquirindo conhecimentos 
-                                abrangentes em ambas as extremidades do espectro tecnológico. Do back-end ao front-end, fui exposto a desafios práticos e projetos 
-                                significativos que me permitiram consolidar habilidades essenciais.
-                            </p>
-                            <p>
-                                No âmbito do desenvolvimento Full Stack, aprimorei minha proficiência em Java, explorando sua aplicação robusta e versátil no back-end. 
-                                Além disso, mergulhei no mundo dinâmico do Angular para desenvolver interfaces de usuário interativas e responsivas.
-                            </p>
-                            <p>
-                                O programa também proporcionou uma imersão prática em metodologias ágeis, colaboração em equipe e práticas modernas de desenvolvimento 
-                                de software. Através de mentoring e feedback contínuo, fui capacitado a aprimorar minhas habilidades técnicas e a compreender a 
-                                importância da colaboração para o sucesso de projetos complexos.
-                            </p>
-                    </div>
-                    <div class="flex-shrink-0"><span class="text-primary">Novembro 2020 - Junho 2021</span></div>
-                </div>
-            </div>
-        </section>
-        <hr class="m-0" />
-        <!-- Education-->
-        <section class="resume-section" id="education">
-            <div class="resume-section-content">
-                <h2 class="mb-5">Formação</h2>
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div class="flex-grow-1">
-                        <h3 class="mb-0">Faculdade Impacta</h3>
-                        <div class="subheading mb-3">Análise e Desenvolvimento de Sistemas - EaD</div>
-                    </div>
-                    <div class="flex-shrink-0"><span class="text-primary">Janeiro 2022 - Julho 2024</span></div>
-                </div>
-                <div class="d-flex flex-column flex-md-row justify-content-between">
-                    <div class="flex-grow-1">
-                        <h3 class="mb-0">Faculdade Hortolândia</h3>
-                        <div class="subheading mb-3">Ciências Contábeis</div>
-                    </div>
-                    <div class="flex-shrink-0"><span class="text-primary">Agosto 2009 - Dezembro 2013</span></div>
-                </div>
-            </div>
-        </section>
-        <hr class="m-0" />
-        <!-- Skills-->
-        <section class="resume-section" id="skills">
-            <div class="resume-section-content">
-                <h2 class="mb-5">Skills</h2>
-                <div class="subheading mb-3">Ferramentas de Linguagem e Programação</div>
-                <ul class="list-inline dev-icons">
-                    <li class="list-inline-item">
-                        <img align="center" alt="Natalia-Java" height="80" width="100"
-                            src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white">
-                    </li>
-                    <li class="list-inline-item">
-                        <img align="center" alt="Natalia-Spring" height="80" width="100"
-                            src="https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white">
-                    </li>
-                    <li class="list-inline-item">
-                        <img align="center" alt="Natalia-AWS" height="80" width="100"
-                            src="https://static-00.iconduck.com/assets.00/aws-icon-2048x2048-274bm1xi.png">
-                    </li>
-                    <li class="list-inline-item">
-                        <img align="center" alt="Natalia-Angular" height="80" width="100"
-                            src="https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white">
-                    </li>
-                    <li class="list-inline-item">
-                        <img align="center" alt="Natalia-HTML" height="80" width="100"
-                            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
-                    </li>
-                    <li class="list-inline-item">
-                        <img align="center" alt="Natalia-CSS" height="80" width="100"
-                            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
-                    </li>
-                    <li class="list-inline-item">
-                        <img align="center" alt="Natalia-Bootstrap" height="80" width="100"
-                            src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=whiteg">
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <!-- Portifolio-->
-        <section class="resume-section" id="portifolio">
-            <div class="resume-section-content">
-                <h2 class="mb-5">Portifólio</h2>
-                <div>
-                    <h3>Site Fábrica de Delícias</h3>
-                    <div>
-                        <p>Site produzido para duas confeiteiras divulgarem o trabalho delas.</p>
-                        <p>Obs.: Foi desativado em 12/2021 devido a não utilização.</p>
-                    </div>
-                    <div class="row mt-5 justify-content-around">
-                        <div class="col-12 col-sm-6 col-lg-3 justify-content-center">
-                            <div class="card" style="width: 18rem;">
-                                <img src="./assets/img/Home.png" class="card-img-top" alt="Bombontone">
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-6 col-lg-3">
-                            <div class="card" style="width: 18rem;">
-                                <img src="./assets/img/Produtos.png" class="card-img-top" alt="Bombontone">
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-6 col-lg-3">
-                            <div class="card" style="width: 18rem;">
-                                <img src="./assets/img/Contatos.png" class="card-img-top" alt="Bombontone">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <hr>
-                <div>
-                    <h3>Site Sou Mãe Urso</h3>
-                    <div>
-                        <p>Site produzido uma consultora de sono divulgar seu trabalho</p>
-                        <p>Obs.: Foi desativado em 08/2023 devido a não utilização.</p>
-                    </div>
-                    <div class="row mt-5 justify-content-around">
-                        <div class="col-12 col-sm-6 col-lg-3 justify-content-center">
-                            <div class="card" style="width: 18rem;">
-                                <img src="./assets/img/Pagina1_Mobile.jpg" class="card-img-top" alt="Bombontone">
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-6 col-lg-3 justify-content-center">
-                            <div class="card" style="width: 18rem;">
-                                <img src="./assets/img/Pagina2_Mobile.jpg" class="card-img-top" alt="Bombontone">
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-6 col-lg-3">
-                            <div class="card" style="width: 18rem;">
-                                <img src="./assets/img/Pagina5_Mobile.jpg" class="card-img-top" alt="Bombontone">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <hr class="m-0" />
-        <!-- Awards-->
-        <section class="resume-section" id="awards">
-            <div class="resume-section-content">
-                <h2 class="mb-5">Cursos</h2>
-                <ul class="fa-ul mb-0">
-                    <li>
-                        <span class="fa-li"><i class="fas fa-book-reader text-warning"></i></i></span>
-                        Projeto Decoder (Microserviços Java e Spring) - Michelli Brito - Cursando
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-book-reader text-warning"></i></i></span>
-                        Módulos Angular - Digital Innovation One - Concluído
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-book-reader text-warning"></i></i></span>
-                        Single Page Application com Angular - Digital Innovation One - Concluído
-                    </li> 
-                    <li>
-                        <span class="fa-li"><i class="fas fa-book-reader text-warning"></i></i></span>
-                        Trabalhando com Componentes Angular - Digital Innovation One - Concluído
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-book-reader text-warning"></i></i></span>
-                        Testes Unitários Com JUnit - Digital Innovation One - Concluído
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-book-reader text-warning"></i></i></span>
-                        Microsserviços em Spring Cloud com Java - Digital Innovation One - Concluído
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-book-reader text-warning"></i></i></span>
-                        Modelando um banco de dados na prática com SQL SERVER - Digital Innovation One - Concluído
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-book-reader text-warning"></i></i></span>
-                        Desenvolvimento avançado em Java - Digital Innovation One - Concluído
-                    </li> 
-                    <li>
-                        <span class="fa-li"><i class="fas fa-book-reader text-warning"></i></i></span>
-                        Desenvolvimento avançado em Java - Digital Innovation One - Concluído
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-book-reader text-warning"></i></i></span>
-                        Desenvolvimento básico em Java - Digital Innovation One - Concluído
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-book-reader text-warning"></i></i></span>
-                        Introdução ao framework Spring Boot - Digital Innovation One - Concluído
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-book-reader text-warning"></i></i></span>
-                        Introdução ao Git e ao GitHub - Digital Innovation One - Concluído
-                    </li><li>
-                        <span class="fa-li"><i class="fas fa-book-reader text-warning"></i></i></span>
-                        Introdução à Programação Orientada a Objeto - Digital Innovation One - Concluído
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-book-reader text-warning"></i></i></span>
-                        Curso de HTML 5 COMPLETO e com Projetos Práticos para WEB - Udemy - Concluído
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-book-reader text-warning"></i></i></span>
-                        Treinamento em Java - 5 semanas - Itaú-Unibanco - Concluído
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-book-reader text-warning"></i></i></span>
-                        Treinamento em Java e Angular - 4 meses - RaiaDrogasil - Concluído
-                    </li>
-                </ul>
-            </div>
-        </section>
-    </div>
-    <!-- Bootstrap core JS-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Third party plugin JS-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-    <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
