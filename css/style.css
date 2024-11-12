@@ -2,13 +2,20 @@
 
 /* Definindo variáveis de cores */
 :root {
-    --main-color: #009539;      /* Cor principal para o destaque (verde) */
-    --text-color: #ffffff;      /* Cor do texto */
-    --bg-color-01: #1f242d;     /* Cor de fundo primária (quase preta) */
-    --bg-color-02: #323946;     /* Cor de fundo secundária (cinza escuro) */
-    --color-01: #B0B0B0;        /* Cor extra 1 (cinza claro) */
-    --linkedin-color: #0077b5;  /* Cor do LinkedIn */
-    --github-color: #ededed;    /* Cor do GitHub */
+    --main-color: #009539;
+    /* Cor principal para o destaque (verde) */
+    --text-color: #ffffff;
+    /* Cor do texto */
+    --bg-color-01: #1f242d;
+    /* Cor de fundo primária (quase preta) */
+    --bg-color-02: #323946;
+    /* Cor de fundo secundária (cinza escuro) */
+    --color-01: #B0B0B0;
+    /* Cor extra 1 (cinza claro) */
+    --linkedin-color: #0077b5;
+    /* Cor do LinkedIn */
+    --github-color: #ededed;
+    /* Cor do GitHub */
 }
 
 * {
@@ -20,7 +27,7 @@
     scroll-behavior: smooth;
 }
 
-header{
+header {
     max-height: 20vh;
 }
 
@@ -98,12 +105,13 @@ p {
 }
 
 h2 {
-    font-size: 2.5rem;
     color: var(--main-color);
+    font-weight: 700;
+    margin-bottom: 20px;
     text-align: center;
 }
 
-.sobre{
+.sobre {
     justify-content: space-between;
 }
 
@@ -120,27 +128,25 @@ h2 {
     height: auto;
 }
 
-.experiencia-item {
-    background-color: var(--secondary-bg);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.item {
+    background-color: var(--bg-color-02);
+    padding: 15px;
+    border-radius: 8px;
+    color: var(--text-color);
+    border-left: 4px solid var(--main-color);
+    margin-bottom: 15px;
 }
 
-.experiencia-item h5 {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: var(--primary-bg);
+.item h5 {
+    color: var(--main-color);
+    margin-bottom: 10px;
 }
 
-.experiencia-item p {
-    font-size: 1rem;
-    color: var(--primary-bg);
+.item p {
+    margin: 5px 0;
+    color: var(--color-01);
 }
 
-.experiencia-item p strong {
-    color: var(--highlight-color);
-}
 
 footer {
     background-color: var(--primary-bg);
@@ -162,8 +168,13 @@ footer p {
 }
 
 @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .under-construction {
@@ -182,22 +193,28 @@ footer p {
         flex-direction: column;
         align-items: flex-start;
     }
+
     .navbar-nav .nav-link {
         padding: 10px;
         font-size: 1rem;
     }
+
     .sobre-img {
         max-width: 100%;
     }
+
     h2 {
         font-size: 1.5rem;
     }
+
     .experiencia h3 {
         font-size: 1.2rem;
     }
+
     .experiencia-item {
         margin-bottom: 20px;
     }
+
     .experiencia-item .d-flex {
         flex-direction: column;
         align-items: flex-start;
