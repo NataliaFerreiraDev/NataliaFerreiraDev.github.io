@@ -3,19 +3,12 @@
 /* Definindo variáveis de cores */
 :root {
     --main-color: #009539;
-    /* Cor principal para o destaque (verde) */
     --text-color: #ffffff;
-    /* Cor do texto */
     --bg-color-01: #1f242d;
-    /* Cor de fundo primária (quase preta) */
     --bg-color-02: #323946;
-    /* Cor de fundo secundária (cinza escuro) */
     --color-01: #B0B0B0;
-    /* Cor extra 1 (cinza claro) */
     --linkedin-color: #0077b5;
-    /* Cor do LinkedIn */
     --github-color: #ededed;
-    /* Cor do GitHub */
 }
 
 * {
@@ -147,7 +140,57 @@ h2 {
     color: var(--color-01);
 }
 
+/* Estilo da Seção de Skills */
+.card {
+    border: none;
+    background-color: var(--bg-color-02);
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-left: 4px solid var(--main-color);
+}
 
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.card h5 {
+    color: var(--main-color);
+    justify-self: center;
+    font-size: 1.8rem;
+    font-weight: bolder;
+    margin-bottom: 25px;
+}
+
+/* Estilos para a lista de tecnologias */
+.list-unstyled li {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    color: var(--text-color);
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1rem; /* Ajustando o espaçamento entre os itens */
+}
+
+.badge {
+    font-size: 0.8rem;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+}
+
+/* Adicionando espaçamento entre o nome da tecnologia e o badge */
+.list-unstyled li span:first-child {
+    margin-right: 1rem; /* Adicionando um pequeno espaçamento à direita do nome */
+}
+
+.card-body .list-unstyled li {
+    font-size: 1.4rem; /* Ajustando o tamanho da fonte para melhorar a legibilidade */
+}
 footer {
     background-color: var(--primary-bg);
 }
@@ -218,5 +261,18 @@ footer p {
     .experiencia-item .d-flex {
         flex-direction: column;
         align-items: flex-start;
+    }
+
+    .list-unstyled li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .badge {
+        margin-top: 0.5rem;
+    }
+
+    .card-body .list-unstyled li {
+        font-size: 1.2rem;
     }
 }
