@@ -140,7 +140,6 @@ h2 {
     color: var(--color-01);
 }
 
-/* Estilo da Seção de Skills */
 .card {
     border: none;
     background-color: var(--bg-color-02);
@@ -166,7 +165,6 @@ h2 {
     margin-bottom: 25px;
 }
 
-/* Estilos para a lista de tecnologias */
 .list-unstyled li {
     display: flex; 
     justify-content: space-between;
@@ -191,6 +189,8 @@ h2 {
 .card-body .list-unstyled li {
     font-size: 1.4rem; /* Ajustando o tamanho da fonte para melhorar a legibilidade */
 }
+
+
 footer {
     background-color: var(--primary-bg);
 }
@@ -198,37 +198,6 @@ footer {
 footer p {
     margin: 0;
     color: var(--text-color);
-}
-
-.spinner {
-    border: 8px solid var(--color-01);
-    border-top: 8px solid var(--main-color);
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    animation: spin 1s linear infinite;
-    margin: 20px auto;
-}
-
-@keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-.under-construction {
-    text-align: center;
-    padding: 50px 0;
-}
-
-.under-construction p {
-    font-size: 20px;
-    color: var(--text-color);
-    margin-top: 15px;
 }
 
 @media (max-width: 768px) {
