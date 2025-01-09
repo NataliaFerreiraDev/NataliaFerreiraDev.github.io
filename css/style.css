@@ -92,6 +92,15 @@ section {
     padding: 80px 0;
 }
 
+section.portfolio img {
+    width: 100%;
+    height: auto; /* Mantém a proporção da imagem */
+    max-height: 300px; /* Limita a altura máxima das imagens */
+    object-fit: cover; /* Mantém a imagem perfeitamente ajustada dentro do elemento */
+    border-radius: 8px; /* Adiciona arredondamento nas bordas */
+    margin-bottom: 15px; /* Espaçamento entre as imagens */
+}
+
 p {
     text-align: justify;
     line-height: 1.8;
@@ -192,12 +201,14 @@ h2 {
 
 
 footer {
-    background-color: var(--primary-bg);
+    background-color: var(--bg-color-02);
+    padding: 20px 0; 
 }
 
 footer p {
     margin: 0;
     color: var(--text-color);
+    text-align: center;
 }
 
 @media (max-width: 768px) {
