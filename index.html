@@ -3,318 +3,161 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio | Natalia</title>
-
-    <!-- Meta Tags para SEO -->
-    <meta name="description"
-        content="Portfólio de Natalia, desenvolvedora Java plena e iniciante em front-end, mostrando experiências, projetos e habilidades.">
-    <meta name="keywords" content="portfólio, desenvolvedora Java, front-end, projetos, habilidades, experiência">
-    <meta name="author" content="Natalia">
-
-    <!-- Open Graph para compartilhamento em redes sociais -->
-    <meta property="og:title" content="Portfólio | Natalia">
-    <meta property="og:description" content="Confira meu portfólio com experiências e projetos de desenvolvimento.">
-    <meta property="og:image" content="[URL da sua imagem de pré-visualização]">
-    <meta property="og:url" content="https://nataliaferreiradev.github.io/">
-    <meta property="og:type" content="website">
-
-    <!-- Favicon e Font Awesome -->
-    <link rel="icon" href="./img/braces.svg" type="image/png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- CSS personalizado -->
+    <title>Natalia Ferreira - Desenvolvedora Back-end</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
-<body>
-    <!-- Header com menu de navegação fixo -->
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-            <div class="container">
-                <span class="navbar-brand me-3">Natalia D'Angelo</span>
-                <div class="d-flex align-items-center">
-                    <a href="https://www.linkedin.com/in/nataliafdangelo/" target="_blank" class="nav-link social-link"
-                        title="LinkedIn" aria-label="Linkedin">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="https://github.com/NataliaFerreiraDev" target="_blank" class="nav-link social-link"
-                        title="GitHub" aria-label="GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#sobre">Sobre</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#experiencia">Experiência</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#formacao">Formação</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#skills">Skills</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#portfolio">Portifólio</a>
-                        </li>
-                    </ul>
-                </div>
+<body class="dark-theme">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Natalia Ferreira</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-primary text-white px-3 ms-2"
+                            href="#contato">Contato</a></li>
+                </ul>
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
 
-    <!-- Conteúdo principal -->
-    <main class="container my-5">
-        <section id="sobre" class="my-5">
-            <div class="row align-items-center sobre">
-                <div class="col-md-8 sobre-conteudo">
-                    <h2 class="mb-4">Sobre</h2>
-                    <p>
-                        Desenvolvedora Java Pleno com experiência em desenvolvimento de software, especialmente em projetos 
-                        que utilizam Java, Spring Boot, e bancos de dados como Postgres.
-                    </p>
-                    <p>
-                        Tenho experiência no desenvolvimento de microserviços, testes unitários e uso de AWS para infraestrutura.
-                    </p>
-                    <p>
-                        Graduada em Análise e Desenvolvimento de Sistemas pela Faculdade Impacta.
-                    </p>
-                    <p>
-                        Atualmente, estudo mensageria (como RabbitMQ e Kafka), Docker para contêinerização de aplicações, 
-                        e Angular para desenvolvimento front-end.
-                    </p>
-                    <p>
-                        Comprometida com a evolução constante e a entrega de valor. 
-                    </p>
-                    <p>
-                        Estou sempre em busca de novos desafios e oportunidades para aplicar e expandir meus
-                        conhecimentos técnicos. Acredito que cada projeto é uma oportunidade para aprender e contribuir
-                        de forma significativa.
+    <!-- Hero -->
+    <section class="hero d-flex align-items-center text-center text-white" id="home">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Olá, eu sou a Natalia 👋</h1>
+            <p class="lead mb-4">Desenvolvedora Back-end especializada em <strong>Java & Spring Boot</strong>.
+                Transformo ideias em sistemas robustos, APIs bem estruturadas e aplicações que funcionam de verdade.</p>
+            <a href="#projetos" class="btn btn-outline-light btn-lg me-2">Ver Portfólio</a>
+            <a href="https://wa.me/5511976481655" target="_blank" class="btn btn-primary btn-lg">Solicitar Orçamento</a>
+        </div>
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre" class="section d-flex align-items-center">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center">
+                    <img src="./img/profile.png" alt="Desenvolvedora" class="img-fluid" style="max-height: 300px;">
+                </div>
+                <div class="col-md-6">
+                    <h2 class="fw-bold mb-3">Sobre mim</h2>
+                    <p>Sou desenvolvedora back-end com experiência em APIs REST, integração de sistemas e bancos de
+                        dados relacionais (PostgreSQL).
+                        Trabalho principalmente com <strong>Java e Spring Boot</strong>, mas também possuo conhecimentos
+                        em front-end, o que me permite colaborar em projetos completos.</p>
+                    <p>Atualmente atuo como desenvolvedora CLT, mas também realizo projetos como
+                        <strong>freelancer</strong> para empresas e pessoas que precisam de soluções digitais de
+                        qualidade.
                     </p>
                 </div>
-                <div class="col-md-4 sobre-img">
-                    <img src="./img/profile_natalia.png" alt="Natalia D'Angelo, Desenvolvedora Java" class="img-fluid">
-                </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="experiencia" class="container">
-            <h2 class="mb-4">Experiência Profissional</h2>
-            <div class="item">
-                <div class="d-flex justify-content-between">
-                    <h5 class="font-weight-bold">Desenvolvedora Java Pleno</h5>
-                    <p class="font-italic">Koerich Lab</p>
-                    <p><strong>Período:</strong> De 03/2024 - Atualmente</p>
-                </div>
-                <p>Atualmente, atuo no desenvolvimento e manutenção de aplicações utilizando Java e Spring, 
-                    com foco em APIs REST e integração com bancos de dados PostgreSQL. 
-                    Desenvolvo e realizo testes unitários para garantir a qualidade do código, utilizando as 
-                    melhores práticas de versionamento com o GitLab.
-                </p>
-            </div>
-
-            <div class="item">
-                <div class="d-flex justify-content-between">
-                    <h5 class="font-weight-bold">Desenvolvedora Java Pleno</h5>
-                    <p class="font-italic">RGC Consultoria Engenharia</p>
-                    <p><strong>Período:</strong> De 03/2024 a 12/2024</p>
-                </div>
-                <p>Trabalhei com Java, Postgres e Git, focando na manutenção e implementação de novas funcionalidades.</p>
-            </div>
-
-            <div class="item">
-                <div class="d-flex justify-content-between">
-                    <h5 class="font-weight-bold">Desenvolvedora Java Júnior</h5>
-
-                    <p class="font-italic">Itaú Unibanco</p>
-                    <p><strong>Período:</strong> De 06/2021 a 02/2024</p>
-                </div>
-                <p>Como desenvolvedora back-end, atuei em todas as fases do ciclo de vida do projeto, desde a concepção 
-                    até o lançamento, sendo responsável pela manutenção e desenvolvimento contínuo de novas funcionalidades. 
-                    Minhas habilidades incluem desenvolvimento de BFF em Java com Spring, testes unitários, arquitetura de
-                    microserviços, versionamento no GitHub e infraestrutura na AWS. Também contribui para a
-                    observabilidade do sistema usando Prometheus, Grafana e Splunk. Ingressei na empresa por meio de um
-                    bootcamp de 5 semanas, solidificando meu conhecimento em Java, Spring Boot e AWS.</p>
-            </div>
-
-            <div class="item">
-                <div class="d-flex justify-content-between">
-                    <h5 class="font-weight-bold">Desenvolvedora Java e Angular</h5>
-
-                    <p class="font-italic">Raia Drogasil</p>
-                    <p><strong>Período:</strong> De 11/2020 a 06/2021</p>
-                </div>
-                <p>Participei do Programa Quero Ser Dev, uma iniciativa para capacitar novos talentos em programação
-                    Full Stack com foco em Java e Angular. Durante o treinamento intensivo, adquiri conhecimentos em
-                    back-end e front-end, enfrentando desafios práticos e projetos significativos. Aprimorei minha
-                    proficiência em Java para o back-end e desenvolvi interfaces de usuário com Angular. O programa
-                    também proporcionou imersão em metodologias ágeis, colaboração em equipe e práticas modernas de
-                    desenvolvimento de software, com mentoring e feedback contínuos.</p>
-            </div>
-        </section>
-
-        <section id="formacao" class="container my-5">
-            <h2 class="mb-4">Formação</h2>
-            <div class="item mb-3">
-                <h5 class="font-weight-bold">Graduação</h5>
-                <p><strong>Instituição:</strong> Faculdade Impacta</p>
-                <p><strong>Curso:</strong> Análise e Desenvolvimento de Sistemas</p>
-                <p><strong>Período:</strong> De 01/2022 a 06/2024</p>
-            </div>
-            <div class="item mb-3">
-                <h5 class="font-weight-bold">Graduação</h5>
-                <p><strong>Instituição:</strong> UNIESP - Hortolândia</p>
-                <p><strong>Curso:</strong> Ciências Contábeis</p>
-                <p><strong>Período:</strong> De 08/2009 a 12/2013</p>
-            </div>
-        </section>
-
-        <section id="skills" class="container my-5">
-            <h2 class="mb-4">Skills</h2>
-            <div class="row">
+    <!-- Serviços -->
+    <section id="servicos" class="section d-flex align-items-center">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-5">Serviços</h2>
+            <div class="row g-4">
                 <div class="col-md-4">
-                    <div class="card shadow-sm">
-                        <div class="card-body">
-                            <h5>Back-End</h5>
-                            <ul class="list-unstyled">
-                                <li class="d-flex justify-content-between align-items-center">
-                                    <span>Java</span>
-                                    <span class="badge bg-success rounded-pill">Intermediário</span>
-                                </li>
-                                <li class="d-flex justify-content-between align-items-center">
-                                    <span>Microserviços</span>
-                                    <span class="badge bg-success rounded-pill">Intermediário</span>
-                                </li>
-                                <li class="d-flex justify-content-between align-items-center">
-                                    <span>PostgreSQL</span>
-                                    <span class="badge bg-success rounded-pill">Iniciante</span>
-                                </li>
-                                <li class="d-flex justify-content-between align-items-center">
-                                    <span>Spring Boot</span>
-                                    <span class="badge bg-success rounded-pill">Intermediário</span>
-                                </li>
-                            </ul>
-                        </div>
+                    <div class="card h-100 shadow-sm p-4 bg-dark text-white border-0">
+                        <i class="fas fa-server fa-2x mb-3 text-primary"></i>
+                        <h5>APIs REST</h5>
+                        <p>Criação de APIs seguras e bem estruturadas, com autenticação e documentação.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card shadow-sm">
-                        <div class="card-body">
-                            <h5>Front-End</h5>
-                            <ul class="list-unstyled">
-                                <li class="d-flex justify-content-between align-items-center">
-                                    <span>Angular</span>
-                                    <span class="badge bg-success rounded-pill">Iniciante</span>
-                                </li>
-                                <li class="d-flex justify-content-between align-items-center">
-                                    <span>Bootstrap</span>
-                                    <span class="badge bg-success rounded-pill">Intermediário</span>
-                                </li>
-                                <li class="d-flex justify-content-between align-items-center">
-                                    <span>CSS</span>
-                                    <span class="badge bg-success rounded-pill">Intermediário</span>
-                                </li>
-                                <li class="d-flex justify-content-between align-items-center">
-                                    <span>HTML</span>
-                                    <span class="badge bg-success rounded-pill">Intermediário</span>
-                                </li>
-                            </ul>
-                        </div>
+                    <div class="card h-100 shadow-sm p-4 bg-dark text-white border-0">
+                        <i class="fas fa-database fa-2x mb-3 text-primary"></i>
+                        <h5>Bancos de Dados</h5>
+                        <p>Modelagem, manutenção e otimização em PostgreSQL e outros relacionais.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card shadow-sm">
-                        <div class="card-body">
-                            <h5>Dev Ops</h5>
-                            <ul class="list-unstyled">
-                                <li class="d-flex justify-content-between align-items-center">
-                                    <span>AWS</span>
-                                    <span class="badge bg-success rounded-pill">Iniciante</span>
-                                </li>
-                                <li class="d-flex justify-content-between align-items-center">
-                                    <span>Docker</span>
-                                    <span class="badge bg-success rounded-pill">Iniciante</span>
-                                </li>
-                                <li class="d-flex justify-content-between align-items-center">
-                                    <span>Git/GitHub</span>
-                                    <span class="badge bg-success rounded-pill">Intermediário</span>
-                                </li>
-                                <li class="d-flex justify-content-between align-items-center">
-                                    <span>Mensageria</span>
-                                    <span class="badge bg-success rounded-pill">Estudando</span>
-                                </li>
-                            </ul>
-                        </div>
+                    <div class="card h-100 shadow-sm p-4 bg-dark text-white border-0">
+                        <i class="fas fa-code fa-2x mb-3 text-primary"></i>
+                        <h5>Sistemas Sob Medida</h5>
+                        <p>Desenvolvimento de soluções personalizadas em Java & Spring Boot.</p>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="portfolio" class="portfolio my-5">
-            <div class="container">
-                <h2 class="text-center text-uppercase mb-4">Portfólio</h2>
-                <div class="row justify-content-center">
-                    <!-- Adicionando Card Game API -->
-                    <div class="col-lg-4 col-md-6">
-                        <div class="card shadow-sm h-100">
+    <!-- Projetos -->
+    <section id="projetos" class="section d-flex align-items-center">
+        <div class="container text-center ">
+            <h2 class="fw-bold mb-5">Projetos</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm bg-dark text-white border-0">
+                        <div class="card-body">
+                            <h5 class="card-title">Card Game API</h5>
                             <img src="img/card_game_api.png" class="card-img-top" alt="Card Game API">
-                            <div class="card-body d-flex flex-column justify-content-between">
-                                <h5 class="card-title text-center">Card Game API</h5>
-                                <p class="card-text text-center">
-                                    API para um jogo de cartas, desenvolvida com Java e Spring Boot para gerenciar as interações e funcionalidades do jogo.
-                                </p>
-                                <div class="d-flex justify-content-center align-items-center mt-3">
-                                    <a href="https://github.com/NataliaFerreiraDev/card-game-api" 
-                                    target="_blank" 
-                                    rel="noopener noreferrer" 
-                                    class="btn bg-success text-white rounded-pill px-4 py-2">
-                                    Ver no GitHub
-                                    </a>
-                                </div>
+                            <p class="card-text">API para um jogo de cartas, desenvolvido com Java e Spring Boot.</p>
+                            <span class="badge bg-primary">Java</span>
+                            <span class="badge bg-primary">Spring Boot</span>
+                            <span class="badge bg-primary">PostgreSQL</span>
+                            <div class="mt-3">
+                                <a href="https://github.com/NataliaFerreiraDev/card-game-api" target="_blank"
+                                    class="btn btn-outline-light btn-sm">Ver no GitHub</a>
                             </div>
                         </div>
                     </div>
-                    <!-- Adicionando Cadastro de Sabres -->
-                    <div class="col-lg-4 col-md-6">
-                        <div class="card shadow-sm h-100">
-                            <img src="img/sabres_project_home.jpeg" class="card-img-top" alt="Cadastro de Sabres">
-                            <div class="card-body d-flex flex-column justify-content-between">
-                                <h5 class="card-title text-center">Cadastro de Sabres</h5>
-                                <p class="card-text text-center">
-                                    Sistema para registro e gestão de sabres de luz, desenvolvido com Java e Spring Boot.
-                                </p>
-                                <div class="d-flex justify-content-center align-items-center mt-3">
-                                    <a href="https://github.com/NataliaFerreiraDev/sabres" 
-                                    target="_blank" 
-                                    rel="noopener noreferrer" 
-                                    class="btn bg-success text-white rounded-pill px-4 py-2">
-                                    Ver no GitHub
-                                    </a>
-                                </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm bg-dark text-white border-0">
+                        <div class="card-body">
+                            <h5 class="card-title">Cadastro de Sabres</h5>
+                             <img src="img/sabres_project_home.jpeg" class="card-img-top" alt="Cadastro de Sabres">
+                            <p class="card-text">Sistema para registro e gestão de sabres de luz, desenvolvido com Java e Spring Boot.</p>
+                            <span class="badge bg-primary">Java</span>
+                            <span class="badge bg-primary">Spring Boot</span>
+                            <span class="badge bg-primary">PostgreSQL</span>
+                            <span class="badge bg-primary">Angular</span>
+                            <div class="mt-3">
+                                <a href="https://github.com/NataliaFerreiraDev/sabres" target="_blank"
+                                    class="btn btn-outline-light btn-sm">Ver no GitHub</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
-    <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2024 Natalia Ferreira. Todos os direitos reservados.</p>
+    <!-- Contato -->
+    <section id="contato" class="section d-flex align-items-center bg-black text-white">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-4">Vamos conversar?</h2>
+            <p class="mb-4">Estou disponível para novos projetos como freelancer 🚀</p>
+            <div class="d-flex justify-content-center gap-3 flex-wrap">
+                <a href="mailto:nataliaferreira.dev@yahoo.com" class="btn btn-outline-light"><i
+                        class="fas fa-envelope"></i>
+                    Email</a>
+                <a href="https://wa.me/5511976481655" target="_blank" class="btn btn-success"><i
+                        class="fab fa-whatsapp"></i> WhatsApp</a>
+                <a href="https://www.linkedin.com/in/nataliafdangelo/" target="_blank" class="btn btn-primary"><i
+                        class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://github.com/NataliaFerreiraDev" target="_blank" class="btn btn-dark"><i
+                        class="fab fa-github"></i> GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center py-3 bg-dark text-secondary">
+        <p class="mb-0">© 2025 Natalia Ferreira - Todos os direitos reservados</p>
     </footer>
 
-    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
